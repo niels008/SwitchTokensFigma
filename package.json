@@ -1,0 +1,16 @@
+{
+  "name": "theme-switcher",
+  "version": "1",
+  "description": "Theme swithcer",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "Niels de Bont",
+  "license": "MIT",
+  "devDependencies": {
+    "@figma/plugin-typings": "*",
+    "typescript": "*"
+  }
+}

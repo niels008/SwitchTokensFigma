@@ -1,0 +1,18 @@
+{
+  "name": "TokenSwitch",
+  "id": "1217473375071671815",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "ui": "ui.html",
+  "menu": [
+    { "name": "👁️ Show UI", "command": "openSwitcher" },
+    { "name": "🌙 Switch to dark mode", "command": "darkMode" },
+    { "name": "🌞 Switch to light mode", "command": "lightMode" },
+    { "name": "🤖 Switch to alfa mode", "command": "alfaMode" },
+    {
+      "name": "💾 Save document's color styles",
+      "command": "saveFromTeamLibrary"
+    }
+  ]
+}
