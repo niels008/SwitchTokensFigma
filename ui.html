@@ -1,13 +1,19 @@
 <style>
+  * {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
   .body {
     background-color: #2c2c2c;
+    box-sizing: border-box;
   }
 
   .container {
     display: flex;
     flex-direction: column;
     justify-content: flex;
-    gap: 8px;
+    gap: 1rem;
   }
 
   .button {
@@ -16,9 +22,9 @@
     align-items: center;
     padding: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
-    border-radius: 1rem;
+    border-radius: 0.45rem;
     border: none;
-    background: #6e6d70;
+    background: #ffffff;
     box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
       inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
       0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
@@ -26,16 +32,14 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    color: #333;
+    font-weight: 800;
+    outline: none;
   }
 
-  .button-light {
-    background: #dfdedf;
-    color: #6e6d70;
-  }
-
-  .button-alfa {
-    background: darkorange;
-    color: #ffffff;
+  .button:hover {
+    color: #333;
+    background: #e3e3e3;
   }
 
   .button:focus {
@@ -48,7 +52,7 @@
 <html class="body">
   <div class="container">
     <button class="button button-light" id="light">🌞 Light</button>
-    <button class="button" id="dark">🌙 Dark</button>
+    <button class="button button-dark" id="dark">🌙 Dark</button>
     <button class="button button-alfa" id="alfa">🤖 Alfa</button>
   </div>
 </html>

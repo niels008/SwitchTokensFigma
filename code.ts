@@ -2,7 +2,7 @@ async function main() {
   if (figma.command === "openSwitcher") {
     await TeamColorsManager.loadTeamStyles();
     figma.notify("Loaded team styles", { timeout: 2000 });
-    figma.showUI(__html__, { height: 180, width: 300 });
+    figma.showUI(__html__, { height: 200, width: 300 });
   } else if (figma.command === "alfaMode") {
     await replaceAllStyles("alfa");
     figma.notify("🤖 Switched to alfa mode", { timeout: 2000 });
